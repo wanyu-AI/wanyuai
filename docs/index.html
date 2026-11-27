@@ -57,6 +57,7 @@ section{border-top:1px solid var(--line)}
 .dl{margin:30px 0 0; border:1px solid var(--line); border-radius:var(--radius); padding:22px 20px;
   display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px}
 .dl .left{min-width:220px}
+.dl .acts{display:flex; flex-wrap:wrap; gap:10px}
 .dl strong{font-size:15px}
 .dl small{display:block; color:var(--muted); font-size:13px; margin-top:3px}
 .list{margin:26px 0 0; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden}
@@ -105,9 +106,9 @@ footer a:hover{color:var(--ink)}
     <h1>你的 AI 对话，<br>不必寄存在别人的服务器</h1>
     <p>挽屿AI 是一款安卓 AI 对话客户端：模型接口自己填，数据存在本机，需要时再同步。配套 PHP 后端可自建，账号、积分、风控与后台全部开源。</p>
     <div class="actions">
-      <a class="btn primary" href="https://github.com/wanyu-AI/wanyuai/releases" target="_blank" rel="noopener">
+      <a class="btn primary" href="https://github.com/wanyu-AI/wanyuai/releases/download/v3.5.0/wanyu-3.5.0-universal.apk" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v10"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M5 18.5h14"/></svg>
-        下载 APK
+        下载 APK 3.5.0
       </a>
       <a class="btn" href="https://github.com/wanyu-AI/wanyuai" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h-3a5 5 0 0 1 0-10h3"/><path d="M15 8h3a5 5 0 0 1 0 10h-3"/><path d="M8 13h8"/></svg>
@@ -170,13 +171,22 @@ footer a:hover{color:var(--ink)}
       </div>
       <div class="dl">
         <div class="left">
-          <strong>Android 安装包（APK）</strong>
-          <small>arm64-v8a / x86_64 · 支持 Android 8.0 及以上</small>
+          <strong>Android 安装包（APK）· 3.5.0</strong>
+          <small>versionCode 218 · 支持 Android 8.0 及以上</small>
         </div>
-        <a class="btn primary" href="https://github.com/wanyu-AI/wanyuai/releases" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 4v10"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M5 18.5h14"/></svg>
-          前往 Releases
-        </a>
+        <div class="acts">
+          <a class="btn primary" href="https://github.com/wanyu-AI/wanyuai/releases/download/v3.5.0/wanyu-3.5.0-universal.apk" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 4v10"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M5 18.5h14"/></svg>
+            通用包 21.9 MB
+          </a>
+          <a class="btn" href="https://github.com/wanyu-AI/wanyuai/releases/download/v3.5.0/wanyu-3.5.0-arm64-v8a.apk" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 4v10"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M5 18.5h14"/></svg>
+            arm64 包 17.9 MB
+          </a>
+          <a class="btn" href="https://github.com/wanyu-AI/wanyuai/releases" target="_blank" rel="noopener">
+            全部版本
+          </a>
+        </div>
       </div>
       <div class="note">安装前需在系统里允许「未知来源应用」。当前为自签名调试/发布包，升级请覆盖安装同一签名版本，否则需先卸载。</div>
     </div>
