@@ -1,0 +1,45 @@
+name: 发布安装包
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 创建 Release 并上传 APK
+        uses: softprops/action-gh-release@v2
+        with:
+          name: 挽屿AI ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          body: |
+            ## 挽屿AI ${{ github.ref_name }}
+
+            基于 RikkaHub 3.5.0 的定制版本，遵循 AGPL-3.0 许可证。
+
+            ### 安装包
+            - `wanyu-3.5.0-universal.apk` — 通用包（全架构，推荐，约 23 MB）
+            - `wanyu-3.5.0-arm64-v8a.apk` — 仅 64 位 ARM 设备，体积更小（约 19 MB）
+
+            ### 版本信息
+            - versionName 3.5.0 / versionCode 218
+            - applicationId `com.ai.wanyu`
+            - minSdk 26（Android 8.0 及以上）
+
+            ### 安装说明
+            1. 下载对应 APK；
+            2. 允许「安装未知应用」权限后安装；
+            3. 首次启动需在设置中填写你自己的服务端地址。
+          files: |
+            releases/wanyu-3.5.0-universal.apk
+            releases/wanyu-3.5.0-arm64-v8a.apk

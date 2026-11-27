@@ -19,6 +19,8 @@ build/
 captures/
 *.apk
 *.aab
+# 例外：发版用的成品安装包需要提交，供 GitHub Actions 生成 Release 附件
+!releases/*.apk
 *.hprof
 
 # ---- 依赖与工具 ----
