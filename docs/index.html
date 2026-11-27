@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>挽屿AI · 安卓 AI 对话客户端</title>
+<link rel="icon" type="image/png" href="assets/logo.png">
 <meta name="description" content="挽屿AI 是一款安卓 AI 对话客户端，支持多种模型接口、Agent 工作区与 MCP；配套 PHP 后端与开源仓库。">
 <meta property="og:title" content="挽屿AI">
 <meta property="og:description" content="安卓 AI 对话客户端，数据与模型都由你自己掌控。">
@@ -25,7 +26,7 @@ a{color:inherit; text-decoration:none}
 header{border-bottom:1px solid var(--line); position:sticky; top:0; background:#fff; z-index:10}
 .nav{display:flex; align-items:center; justify-content:space-between; height:62px; gap:16px}
 .brand{display:flex; align-items:center; gap:9px; font-weight:600; letter-spacing:.2px}
-.brand svg{width:22px; height:22px; color:var(--accent)}
+.brand img{width:24px; height:24px; display:block}
 .nav-links{display:flex; align-items:center; gap:22px; font-size:14px; color:var(--muted)}
 .nav-links a:hover{color:var(--ink)}
 .nav-links a.gh{display:inline-flex; align-items:center; gap:6px; color:var(--accent)}
@@ -83,7 +84,7 @@ footer a:hover{color:var(--ink)}
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4.5 0 8 3.2 8 7.2S16.5 17.4 12 17.4c-1 0-2-.2-2.9-.5L5 18.5l1.2-3.4C4.8 13.8 4 12.2 4 10.2C4 6.2 7.5 3 12 3Z"/><path d="M9.2 11.2h5.6"/></svg>
+      <img class="logo" src="assets/logo.png" width="24" height="24" alt="挽屿AI">
       <span>挽屿AI</span>
     </a>
     <nav class="nav-links">
