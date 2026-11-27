@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 内置助手头像仅通过 android.resource:// URI 字符串引用，资源压缩器会误判为未使用，这里显式保留 -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/assistant_*" />

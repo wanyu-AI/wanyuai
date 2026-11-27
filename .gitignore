@@ -1,0 +1,29 @@
+# ---- 密钥与本地配置（绝不提交）----
+local.properties
+*.jks
+*.keystore
+*.p12
+*.pem
+backend/config/config.php
+backend/storage/
+*.log
+hs_err_pid*.log
+
+# ---- 构建产物 ----
+build/
+**/build/
+.gradle/
+.kotlin/
+.cxx/
+.externalNativeBuild/
+captures/
+*.apk
+*.aab
+*.hprof
+
+# ---- 依赖与工具 ----
+node_modules/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
